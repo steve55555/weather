@@ -7,13 +7,17 @@ import { WeatherService } from './weather.service';
   providers: [WeatherService]
 })
 export class WeatherComponent implements OnInit {
-
-    constructor(private locationService: WeatherService) {
-    this.locationService.getCurrentLocation();
-    this.locationService.getCurrentWeather(0,0)
-      .subscribe(weather => console.log(weather),
-      err => console.log(err))
-    }
+  pos: Position;
+  constructor(private locationService: WeatherService) {
+    this.locationService.getCurrentLocation()
+      .subscribe(position => {
+        this.pos = position;
+        this.locationService.getCurrentWeather(this.pos.coords.latitude, this.pos.coords.longitude)
+          .subscribe(weather => console.log(weather),
+          err => console.log(err))
+      },
+      err => console.error(err));
+  }
 
   ngOnInit() {
   }
