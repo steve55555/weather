@@ -1,0 +1,35 @@
+.card {
+    width:17%;
+    border-style: solid;
+    border-width: 5px;
+    height: 550px;
+    background-color: #F0FFFF;
+    display:inline-block;
+    margin: 0.25em;
+    padding-left:3px;
+}
+.location{
+    align-content: center;
+    width: 100%;
+    background-color: gray;
+    height: 30px;
+}
+em{
+    float: right;
+    padding-right: 10px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+
+.container{
+    width:100%;
+    display:inline-block;
+}
+canvas{
+    align-content: center;
+    padding: 5px;
+    padding-left: 20px;
+}

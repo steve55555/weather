@@ -1,26 +1,260 @@
+<div class="container">
 <div class="card">
   <div class="card-header">
-    <div class="col-xs-8">
-        <p>Melbourne</p>
+    <div class="location">
+        <h2>Melbourne</h2>
     </div>
-    <div class="col-xs-4">
+    <canvas id="icon1" width="128" height="128"></canvas>
 
+    <br>
+    <div class="temp">
+      <b>Temperature : </b> <em>{{ data.currentLocationTemp |  number: '.0-0' }}&deg;</em>
+      <br>
+      <br>
+      <b>Humidity : </b> <em> {{ data.humidity }}%</em>
+    </div>
+    <br>
+    <div class="summary">
+      <b>Description: </b> <em>{{ data.summary }}</em>
     </div>
   </div>
-
-<div class="card-block">
-  <h1>25</h1>
-  <p>Rain</p>
-
+<br>
+<div class="rain">
+      <b>ChanceOfRain  : </b> <em> {{ data.chanceOfRain }}%</em>
+  <br>
+  <br>
+      <b>RainIntensity : </b> <em>{{ data.rainIntensity }}</em>
+  <br>
+  <br>
 </div>
 <div class="card-footer">
-  <div class="col-xs-5">
-    <p>Wind</p>
-    <p>14mph</p>
+  <div class="wind">
+    <b>WindSpeed: </b><em>{{ data.wind }} mph</em>
+    <br>
+    <br>
+    <b>WindBearing: </b><em> {{ data.windBearing }}</em>
+    <br>
+    <br>
   </div>
-  <div class="col-xs-5 offset-xs-2">
-    <p>Humidity</p>
-    <p>80</p>
+  <div class="other">
+    <b>Ozone: </b><em> {{ data.ozone }}</em>
+    <br>
+    <br>
+    <b>Pressure: </b><em>{{ data.pressure }}</em>
   </div>
 </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+  <div class="card-header">
+    <div class="location">
+        <h2>Sydney</h2>
+    </div>
+    <canvas id="icon2" width="128" height="128"></canvas>
+
+    <br>
+    <div class="temp">
+      <b>Temperature : </b> <em>{{ dataSydney.currentLocationTemp |  number: '.0-0' }}&deg;</em>
+      <br>
+      <br>
+      <b>Humidity : </b> <em> {{ dataSydney.humidity }}%</em>
+    </div>
+    <br>
+    <div class="summary">
+      <b>Description: </b> <em>{{ dataSydney.summary }}</em>
+    </div>
+  </div>
+<br>
+<div class="rain">
+      <b>ChanceOfRain  : </b> <em> {{ dataSydney.chanceOfRain }}%</em>
+  <br>
+  <br>
+      <b>RainIntensity : </b> <em>{{ dataSydney.rainIntensity }}</em>
+  <br>
+  <br>
+</div>
+<div class="card-footer">
+  <div class="wind">
+    <b>WindSpeed: </b><em>{{ dataSydney.wind }} mph</em>
+    <br>
+    <br>
+    <b>WindBearing: </b><em> {{ dataSydney.windBearing }}</em>
+    <br>
+    <br>
+  </div>
+  <div class="other">
+    <b>Ozone: </b><em> {{ dataSydney.ozone }}</em>
+    <br>
+    <br>
+    <b>Pressure: </b><em>{{ dataSydney.pressure }}</em>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+  <div class="card-header">
+    <div class="location">
+        <h2>Perth</h2>
+    </div>
+    <canvas id="icon3" width="128" height="128"></canvas>
+
+    <br>
+    <div class="temp">
+      <b>Temperature : </b> <em>{{ dataPerth.currentLocationTemp |  number: '.0-0' }}&deg;</em>
+      <br>
+      <br>
+      <b>Humidity : </b> <em> {{ dataPerth.humidity }}%</em>
+    </div>
+    <br>
+    <div class="summary">
+      <b>Description: </b> <em>{{ dataPerth.summary }}</em>
+    </div>
+  </div>
+<br>
+<div class="rain">
+      <b>ChanceOfRain  : </b> <em> {{ dataPerth.chanceOfRain }}%</em>
+  <br>
+  <br>
+      <b>RainIntensity : </b> <em>{{ dataPerth.rainIntensity }}</em>
+  <br>
+  <br>
+</div>
+<div class="card-footer">
+  <div class="wind">
+    <b>WindSpeed: </b><em>{{ dataPerth.wind }} mph</em>
+    <br>
+    <br>
+    <b>WindBearing: </b><em> {{ dataPerth.windBearing }}</em>
+    <br>
+    <br>
+  </div>
+  <div class="other">
+    <b>Ozone: </b><em> {{ dataPerth.ozone }}</em>
+    <br>
+    <br>
+    <b>Pressure: </b><em>{{ dataPerth.pressure }}</em>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+  <div class="card-header">
+    <div class="location">
+        <h2>Adelaide</h2>
+    </div>
+    <canvas id="icon4" width="128" height="128"></canvas>
+
+    <br>
+    <div class="temp">
+      <b>Temperature : </b> <em>{{ dataAdelaide.currentLocationTemp |  number: '.0-0' }}&deg;</em>
+      <br>
+      <br>
+      <b>Humidity : </b> <em> {{ dataAdelaide.humidity }}%</em>
+    </div>
+    <br>
+    <div class="summary">
+      <b>Description: </b> <em>{{ dataAdelaide.summary }}</em>
+    </div>
+  </div>
+<br>
+<div class="rain">
+      <b>ChanceOfRain  : </b> <em> {{ dataAdelaide.chanceOfRain }}%</em>
+  <br>
+  <br>
+      <b>RainIntensity : </b> <em>{{ dataAdelaide.rainIntensity }}</em>
+  <br>
+  <br>
+</div>
+<div class="card-footer">
+  <div class="wind">
+    <b>WindSpeed: </b><em>{{ dataAdelaide.wind }} mph</em>
+    <br>
+    <br>
+    <b>WindBearing: </b><em> {{ dataAdelaide.windBearing }}</em>
+    <br>
+    <br>
+  </div>
+  <div class="other">
+    <b>Ozone: </b><em> {{ dataAdelaide.ozone }}</em>
+    <br>
+    <br>
+    <b>Pressure: </b><em>{{ dataAdelaide.pressure }}</em>
+  </div>
+</div>
+</div>
+
+
+
+<div class="card">
+  <div class="card-header">
+    <div class="location">
+        <h2>Brisbane</h2>
+    </div>
+    <canvas id="icon5" width="128" height="128"></canvas>
+
+    <br>
+    <div class="temp">
+      <b>Temperature : </b> <em>{{ dataBrisbane.currentLocationTemp |  number: '.0-0' }}&deg;</em>
+      <br>
+      <br>
+      <b>Humidity : </b> <em> {{ dataBrisbane.humidity }}%</em>
+    </div>
+    <br>
+    <div class="summary">
+      <b>Description: </b> <em>{{ dataBrisbane.summary }}</em>
+    </div>
+  </div>
+<br>
+<div class="rain">
+      <b>ChanceOfRain  : </b> <em> {{ dataBrisbane.chanceOfRain }}%</em>
+  <br>
+  <br>
+      <b>RainIntensity : </b> <em>{{ dataBrisbane.rainIntensity }}</em>
+  <br>
+  <br>
+</div>
+<div class="card-footer">
+  <div class="wind">
+    <b>WindSpeed: </b><em>{{ dataBrisbane.wind }} mph</em>
+    <br>
+    <br>
+    <b>WindBearing: </b><em> {{ dataBrisbane.windBearing }}</em>
+    <br>
+    <br>
+  </div>
+  <div class="other">
+    <b>Ozone: </b><em> {{ dataBrisbane.ozone }}</em>
+    <br>
+    <br>
+    <b>Pressure: </b><em>{{ dataBrisbane.pressure }}</em>
+  </div>
+</div>
+</div>
+
+
+
 </div>

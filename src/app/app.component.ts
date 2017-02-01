@@ -6,5 +6,5 @@ import { WeatherComponent } from './weather/weather.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Australian Weather APP';
 }
