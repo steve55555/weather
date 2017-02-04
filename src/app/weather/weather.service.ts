@@ -1,4 +1,4 @@
-import { FORECAST_KEY, FORECAST_ROOT, GOOGLE_KEY, GOOGLE_ROOT } from './constants';
+import { FORECAST_KEY, FORECAST_ROOT } from './constants';
 import { Injectable } from '@angular/core';
 import { Jsonp, Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
